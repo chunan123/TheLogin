@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会员登录</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <script src="js/jq-min.js"></script> -->
+    <script src="js/axios.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <canvas id="myCanvas"></canvas>
+    <div class="background">
+        <div class="logins">
+            <h3 class="h1s">会员登录</h3>
+            <!-- <p class="doge"></p> -->
+            <h2 class="but">
+                <button type="button" id="butTheLogin">登录</button>
+                <button type="button" id="butRegistered">注册</button>
+            </h2>
+            <hr />
+            <!-- 登录 -->
+            <form action="theLogin.php" method="GET" id="theLogin">
+                <p>
+                    <span class="animation-span">账号</span>
+                    <!-- <input type="text" name="" id="username" required> -->
+                    <input type="text" id="username" required class="animation">
+                </p>
+                <p>
+                    <span class="animation-span animation-span-2">密码</span>
+                    <input type="password" name="" id="password" class="animation-2" required>
+                </p>
+                <p class="warning"></p>
+                <!-- <button type="button" id="login"><span></span>登录</button> -->
+                <input type="submit" id="login" value=" 登录">
+                <div>
+                    <a href="javascript:;">其他方式登录</a>
+                    <span>|</span>
+                    <a href="javascript:;">忘记密码</a>
+                </div>
+            </form>
+            <!-- 注册 -->
+            <form action="Registered.php" method="GET" id="Registered">
+                <p>
+                    <span class="animation-span animation-span-3">账号</span>
+                    <input type="text" name="" id="uname" class="animation-3" required>
+                </p>
+                <p>
+                    <span class="animation-span animation-span-4">密码</span>
+                    <input type="password" name="" id="upaw" class="animation-4" required>
+                </p>
+                <p>
+                    <span class="animation-span animation-span-5">确认密码</span>
+                    <input type="password" name="" id="upaws" class="animation-5" required>
+                </p>
+                <p>
+                    <span class="animation-span animation-span-6">邀请码(选填)</span>
+                    <input type="password" name="" id="" class="animation-6">
+                </p>
+                <p class="warnings"></p>
+                <!-- <button type="button" id="registered"><span></span>注册</button> -->
+                <input type="submit" id="registered" value=" 注册">
+                <div>
+                    <a href="javascript:;">其他方式登录</a>
+                </div>
+            </form>
+            <!-- 注册 -->
+        </div>
+    </div>
+</body>
+
+<!-- 导入 -->
+<script src="js/animation.js"></script>
+<script src="js/index.js"></script>
+<script src="js/TheSpecialEffects.js"></script>
+
+</html>
